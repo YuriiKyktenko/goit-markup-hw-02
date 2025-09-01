@@ -86,3 +86,115 @@ body {
   max-width: 496px;
   margin: 0 auto 48px;
 }
+/* === Заголовки секций === */
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+/* === Values (4 колонки) === */
+.values-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* === Team (4 карточки, светлый фон) === */
+.team {
+  background: var(--light);
+}
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+}
+.card h3 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: var(--dark);
+}
+.card p {
+  margin-bottom: 32px;
+}
+
+/* === Portfolio (3 колонки) === */
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 24px;
+}
+/* === Header (шапка) === */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: var(--dark);
+}
+.logo-accent {
+  color: var(--brand);
+}
+
+.header {
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 0;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.menu-link {
+  display: block;
+  padding: 24px 0;
+  color: var(--dark);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--brand-hover);
+}
+.contacts {
+  margin-left: auto;
+  font-style: normal;
+}
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--brand-hover);
+}
+
+/* Небольшой косметический ап для карточек */
+.values-list h3 {
+  font-size: 20px;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+.team-list img {
+  width: 100%;
+  height: auto;
+} /* чтобы фото в карточке тянулось по ширине */
