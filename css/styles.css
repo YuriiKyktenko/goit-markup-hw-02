@@ -198,3 +198,24 @@ body {
   width: 100%;
   height: auto;
 } /* чтобы фото в карточке тянулось по ширине */
+/* Footer — ближе к макету (не обязательно) */
+.footer {
+  background: var(--dark);
+  color: var(--light);
+  padding: 100px 0;
+}
+.footer .logo {
+  color: var(--light);
+}
+.footer .logo-accent {
+  color: var(--brand);
+}
+.footer p {
+  max-width: 264px;
+}
+
+/* Текст в карточках портфолио — ровнее отступы (опционально) */
+.portfolio-list .card h3,
+.portfolio-list .card p {
+  padding: 0 16px;
+}
