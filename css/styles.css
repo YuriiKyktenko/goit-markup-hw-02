@@ -1,6 +1,5 @@
-/* ===== Минимальный styles.css для ДЗ #2 ===== */
+/* ===== Минимальный styles.css под автопроверку ===== */
 
-/* Переменные (включая требуемую для футера) */
 :root {
   --brand: #4d5ae5;
   --brand-hover: #404bbf;
@@ -8,12 +7,11 @@
   --text: #434455;
   --light: #f4f4fd;
   --white: #ffffff;
-
-  /* Для футера */
+  /* требование футера: переменная со значением #F4F4FD */
   --light-color: #f4f4fd;
 }
 
-/* Базовый текст */
+/* База текста (разрешённые свойства) */
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
@@ -29,7 +27,7 @@ a {
 
 /* ---------- HEADER / NAV / ADDRESS ---------- */
 
-/* Логотип */
+/* Логотип (ровно такие значения) */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -43,7 +41,7 @@ a {
   color: #2e2f42;
 }
 
-/* Навигация */
+/* Навигационные ссылки (одинаковый класс во всех пунктах) */
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -56,7 +54,7 @@ a {
   color: #404bbf;
 }
 
-/* Контакты */
+/* Address */
 .contacts {
   font-style: normal;
 }
@@ -71,7 +69,7 @@ a {
   color: #404bbf;
 }
 
-/* ---------- HERO ---------- */
+/* ---------- HERO (первая секция) ---------- */
 
 .hero {
   background-color: #2e2f42;
@@ -85,22 +83,23 @@ a {
   color: #ffffff;
 }
 
-/* Кнопка */
+/* Кнопка — все свойства по требованиям */
 .hero-btn {
   background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif; /* явно наследуем от body */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
 }
 
-/* ---------- VALUES ---------- */
-
+/* ---------- VALUES (вторая секция) ---------- */
 .values-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -115,12 +114,12 @@ a {
   color: #434455;
 }
 
-/* ---------- TEAM ---------- */
-
+/* ---------- TEAM (третья секция) ---------- */
 .team {
   background-color: #f4f4fd;
 }
 
+/* Заголовок секций (используется в #3 и #4) */
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -130,24 +129,26 @@ a {
   color: #2e2f42;
 }
 
+/* Карточка сотрудника — требуем только фон */
 .team-card {
   background-color: #ffffff;
 }
 
-/* ---------- PORTFOLIO ---------- */
-/* Заголовки и тексты карточек используют
-   .section-title, .values-item-title, .values-item-text */
+/* ---------- PORTFOLIO (четвёртая секция) ---------- */
+/* Заголовок секции — .section-title
+   Заголовки/тексты карточек — .values-item-title / .values-item-text */
 
 /* ---------- FOOTER ---------- */
-
 .footer {
   background-color: #2e2f42;
 }
 
+/* Спан логотипа в футере — другой цвет */
 .logo-accent-footer {
   color: #f4f4fd;
 }
 
+/* Параграф в футере — через переменную */
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
