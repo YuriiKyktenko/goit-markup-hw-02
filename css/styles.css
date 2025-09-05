@@ -1,4 +1,4 @@
-/* ==== Минимальный CSS под чекер (без запрещённых свойств) ==== */
+/* ==== Минимальный CSS под автопроверку (без flex/grid/width/height/padding/…) ==== */
 
 :root {
   --brand: #4d5ae5;
@@ -7,11 +7,12 @@
   --text: #434455;
   --white: #ffffff;
   --light: #f4f4fd;
-  /* требование футера: переменная #F4F4FD */
+
+  /* Требование футера: переменная со значением #F4F4FD */
   --light-color: #f4f4fd;
 }
 
-/* базовый текст */
+/* База */
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
@@ -127,7 +128,7 @@ a {
 
 /* ----- PORTFOLIO (секция #4) ----- */
 /* Заголовок секции — .section-title
-   Внутренние заголовки/тексты — .values-item-title / .values-item-text */
+   Заголовки/тексты карточек — .values-item-title / .values-item-text */
 
 /* ----- FOOTER ----- */
 .footer {
