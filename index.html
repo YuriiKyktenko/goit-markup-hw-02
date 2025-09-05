@@ -13,37 +13,42 @@
       rel="stylesheet"
     />
 
-    <!-- modern-normalize (выравнивает дефолтные стили браузеров) -->
+    <!-- modern-normalize -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
 
-    <!-- твои стили -->
+    <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-wrap">
         <nav class="nav">
+          <!-- ЛОГО: Web + <span>Studio</span> -->
           <a href="./index.html" class="logo"
-            ><span class="logo-accent">Web</span>Studio</a
+            >Web<span class="logo-accent">Studio</span></a
           >
+
+          <!-- NAV: ul + ссылки (1-й пункт ведёт на ./index.html) -->
           <ul class="menu">
-            <li><a class="menu-link" href="#">Studio</a></li>
-            <li><a class="menu-link" href="#">Portfolio</a></li>
-            <li><a class="menu-link" href="#">Contacts</a></li>
+            <li><a class="nav-link" href="./index.html">Studio</a></li>
+            <li><a class="nav-link" href="">Portfolio</a></li>
+            <li><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
+
+        <!-- ADDRESS -->
         <address class="contacts">
           <ul class="contacts-list">
             <li>
-              <a class="contacts-link" href="mailto:info@devstudio.com"
+              <a class="contact-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="contacts-link" href="tel:+110001111111"
+              <a class="contact-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -51,43 +56,45 @@
         </address>
       </div>
     </header>
+
     <main>
       <!-- HERO -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn">Order Service</button>
+          <button type="button" class="hero-btn">Order Service</button>
         </div>
       </section>
+
       <!-- VALUES -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Values</h2>
           <ul class="values-list">
             <li>
-              <h3>Strategy</h3>
-              <p>
+              <h3 class="values-item-title">Strategy</h3>
+              <p class="values-item-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
             <li>
-              <h3>Punctuality</h3>
-              <p>
+              <h3 class="values-item-title">Punctuality</h3>
+              <p class="values-item-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li>
-              <h3>Diligence</h3>
-              <p>
+              <h3 class="values-item-title">Diligence</h3>
+              <p class="values-item-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
             <li>
-              <h3>Technologies</h3>
-              <p>
+              <h3 class="values-item-title">Technologies</h3>
+              <p class="values-item-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -95,34 +102,37 @@
           </ul>
         </div>
       </section>
+
       <!-- TEAM -->
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
-            <li class="card">
+            <li class="team-card">
               <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
-              <h3>Mark Guerrero</h3>
-              <p>Product Designer</p>
+              <h3 class="values-item-title">Mark Guerrero</h3>
+              <p class="values-item-text">Product Designer</p>
             </li>
-            <li class="card">
+            <li class="team-card">
               <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
-              <h3>Tom Ford</h3>
-              <p>Frontend Developer</p>
+              <h3 class="values-item-title">Tom Ford</h3>
+              <p class="values-item-text">Frontend Developer</p>
             </li>
-            <li class="card">
+            <li class="team-card">
               <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
-              <h3>Camila Garcia</h3>
-              <p>Marketing</p>
+              <h3 class="values-item-title">Camila Garcia</h3>
+              <p class="values-item-text">Marketing</p>
             </li>
-            <li class="card">
+            <li class="team-card">
               <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
-              <h3>Daniel Wilson</h3>
-              <p>UI Designer</p>
+              <h3 class="values-item-title">Daniel Wilson</h3>
+              <p class="values-item-text">UI Designer</p>
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- PORTFOLIO -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
@@ -133,8 +143,8 @@
                 alt="Banking App interface on mobile"
                 width="360"
               />
-              <h3>Banking App</h3>
-              <p>App</p>
+              <h3 class="values-item-title">Banking App</h3>
+              <p class="values-item-text">App</p>
             </li>
             <li class="card">
               <img
@@ -142,8 +152,8 @@
                 alt="Contactless payment by smartphone"
                 width="360"
               />
-              <h3>Cashless Payment</h3>
-              <p>Marketing</p>
+              <h3 class="values-item-title">Cashless Payment</h3>
+              <p class="values-item-text">Marketing</p>
             </li>
             <li class="card">
               <img
@@ -151,8 +161,8 @@
                 alt="Meditation App screens"
                 width="360"
               />
-              <h3>Meditation App</h3>
-              <p>App</p>
+              <h3 class="values-item-title">Meditation App</h3>
+              <p class="values-item-text">App</p>
             </li>
             <li class="card">
               <img
@@ -160,8 +170,8 @@
                 alt="Taxi service booking screen"
                 width="360"
               />
-              <h3>Taxi Service</h3>
-              <p>Marketing</p>
+              <h3 class="values-item-title">Taxi Service</h3>
+              <p class="values-item-text">Marketing</p>
             </li>
             <li class="card">
               <img
@@ -169,8 +179,8 @@
                 alt="Set of colorful screen illustrations"
                 width="360"
               />
-              <h3>Screen Illustrations</h3>
-              <p>Design</p>
+              <h3 class="values-item-title">Screen Illustrations</h3>
+              <p class="values-item-text">Design</p>
             </li>
             <li class="card">
               <img
@@ -178,8 +188,8 @@
                 alt="Online courses landing"
                 width="360"
               />
-              <h3>Online Courses</h3>
-              <p>Education</p>
+              <h3 class="values-item-title">Online Courses</h3>
+              <p class="values-item-text">Marketing</p>
             </li>
           </ul>
         </div>
@@ -188,10 +198,13 @@
 
     <footer class="footer">
       <div class="container">
+        <!-- ЛОГО в футере: Web + <span>Studio</span> (другой класс-акцент) -->
         <a href="./index.html" class="logo"
-          ><span class="logo-accent">Web</span>Studio</a
+          >Web<span class="logo-accent-footer">Studio</span></a
         >
-        <p>
+
+        <!-- Параграф футера с требуемым классом -->
+        <p class="footer-text">
           Increase the flow of customers and sales for your business with
           digital marketing &amp; growth solutions.
         </p>
