@@ -16,26 +16,26 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-wrap">
-        <nav class="nav">
-          <a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
-          <ul class="menu">
-            <li><a class="nav-link" href="./index.html">Studio</a></li>
-            <li><a class="nav-link" href="">Portfolio</a></li>
-            <li><a class="nav-link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="contacts">
-          <ul class="contacts-list">
-            <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-          </ul>
-        </address>
-      </div>
+      <!-- ВАЖНО: только nav и address как прямые дети header -->
+      <nav class="nav">
+        <a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
+        <ul class="menu">
+          <li><a class="nav-link" href="./index.html">Studio</a></li>
+          <li><a class="nav-link" href="">Portfolio</a></li>
+          <li><a class="nav-link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <address class="contacts">
+        <ul class="contacts-list">
+          <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        </ul>
+      </address>
     </header>
 
     <main>
-      <!-- HERO (1) — БЕЗ .container -->
+      <!-- HERO (1) — без .container -->
       <section class="hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-btn">Order Service</button>
@@ -133,7 +133,6 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
       <a href="./index.html" class="logo">Web<span class="logo-accent-footer">Studio</span></a>
       <p class="footer-text">
