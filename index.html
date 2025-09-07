@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
-    <!-- Google Fonts (Raleway 700 обязателен) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,52 +12,34 @@
       rel="stylesheet"
     />
 
-    <!-- modern-normalize -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-
-    <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-wrap">
         <nav class="nav">
-          <!-- ЛОГО: Web + <span>Studio</span> -->
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-accent">Studio</span></a
-          >
-
-          <!-- NAV: список внутри nav -->
+          <a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
           <ul class="menu">
             <li><a class="nav-link" href="./index.html">Studio</a></li>
             <li><a class="nav-link" href="">Portfolio</a></li>
             <li><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
-
-        <!-- ADDRESS с одинаковым классом ссылок -->
         <address class="contacts">
           <ul class="contacts-list">
-            <li>
-              <a class="contact-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
+            <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
       </div>
     </header>
 
     <main>
-      <!-- HERO (первая секция) -->
+      <!-- HERO (1) -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -66,147 +47,113 @@
         </div>
       </section>
 
-      <!-- VALUES (вторая секция) -->
+      <!-- VALUES (2) — section > h2 + ul -->
       <section class="section">
-        <div class="container">
-          <h2 class="section-title">Values</h2>
-          <ul class="values-list">
-            <li>
-              <h3 class="values-item-title">Strategy</h3>
-              <p class="values-item-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li>
-              <h3 class="values-item-title">Punctuality</h3>
-              <p class="values-item-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li>
-              <h3 class="values-item-title">Diligence</h3>
-              <p class="values-item-text">
-                Research and confirm brands with the strongest digital growth
-                opportunities and minimize risk.
-              </p>
-            </li>
-            <li>
-              <h3 class="values-item-title">Technologies</h3>
-              <p class="values-item-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
+        <h2 class="section-title">Values</h2>
+        <ul class="values-list">
+          <li>
+            <h3 class="values-item-title">Strategy</h3>
+            <p class="values-item-text">
+              Our goal is to identify the business problem to walk away with
+              the perfect and creative solution.
+            </p>
+          </li>
+          <li>
+            <h3 class="values-item-title">Punctuality</h3>
+            <p class="values-item-text">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li>
+            <h3 class="values-item-title">Diligence</h3>
+            <p class="values-item-text">
+              Research and confirm brands with the strongest digital growth
+              opportunities and minimize risk.
+            </p>
+          </li>
+          <li>
+            <h3 class="values-item-title">Technologies</h3>
+            <p class="values-item-text">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </li>
+        </ul>
       </section>
 
-      <!-- TEAM (третья секция) -->
+      <!-- TEAM (3) — section > h2 + ul -->
       <section class="section team">
-        <div class="container">
-          <h2 class="section-title">Our Team</h2>
-          <ul class="team-list">
-            <li class="team-card">
-              <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
-              <h3 class="values-item-title">Mark Guerrero</h3>
-              <p class="values-item-text">Product Designer</p>
-            </li>
-            <li class="team-card">
-              <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
-              <h3 class="values-item-title">Tom Ford</h3>
-              <p class="values-item-text">Frontend Developer</p>
-            </li>
-            <li class="team-card">
-              <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
-              <h3 class="values-item-title">Camila Garcia</h3>
-              <p class="values-item-text">Marketing</p>
-            </li>
-            <li class="team-card">
-              <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
-              <h3 class="values-item-title">Daniel Wilson</h3>
-              <p class="values-item-text">UI Designer</p>
-            </li>
-          </ul>
-        </div>
+        <h2 class="section-title">Our Team</h2>
+        <ul class="team-list">
+          <li class="card team-card">
+            <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
+            <h3 class="values-item-title">Mark Guerrero</h3>
+            <p class="values-item-text">Product Designer</p>
+          </li>
+          <li class="card team-card">
+            <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
+            <h3 class="values-item-title">Tom Ford</h3>
+            <p class="values-item-text">Frontend Developer</p>
+          </li>
+          <li class="card team-card">
+            <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
+            <h3 class="values-item-title">Camila Garcia</h3>
+            <p class="values-item-text">Marketing</p>
+          </li>
+          <li class="card team-card">
+            <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
+            <h3 class="values-item-title">Daniel Wilson</h3>
+            <p class="values-item-text">UI Designer</p>
+          </li>
+        </ul>
       </section>
 
-      <!-- PORTFOLIO (четвёртая секция) -->
+      <!-- PORTFOLIO (4) — section > h2 + ul; имена картинок = латиница+цифры -->
       <section class="section">
-        <div class="container">
-          <h2 class="section-title">Our Portfolio</h2>
-          <ul class="portfolio-list">
-            <li class="card">
-              <img
-                src="./images/portfolio/portfolio-banking-app.jpg"
-                alt="Banking App interface on mobile"
-                width="360"
-              />
-              <h3 class="values-item-title">Banking App</h3>
-              <p class="values-item-text">App</p>
-            </li>
-            <li class="card">
-              <img
-                src="./images/portfolio/portfolio-cashless-payment.jpg"
-                alt="Contactless payment by smartphone"
-                width="360"
-              />
-              <h3 class="values-item-title">Cashless Payment</h3>
-              <p class="values-item-text">Marketing</p>
-            </li>
-            <li class="card">
-              <img
-                src="./images/portfolio/portfolio-meditation-app.jpg"
-                alt="Meditation App screens"
-                width="360"
-              />
-              <h3 class="values-item-title">Meditation App</h3>
-              <p class="values-item-text">App</p>
-            </li>
-            <li class="card">
-              <img
-                src="./images/portfolio/portfolio-taxi-service.jpg"
-                alt="Taxi service booking screen"
-                width="360"
-              />
-              <h3 class="values-item-title">Taxi Service</h3>
-              <p class="values-item-text">Marketing</p>
-            </li>
-            <li class="card">
-              <img
-                src="./images/portfolio/portfolio-screen-illustrations.jpg"
-                alt="Set of colorful screen illustrations"
-                width="360"
-              />
-              <h3 class="values-item-title">Screen Illustrations</h3>
-              <p class="values-item-text">Design</p>
-            </li>
-            <li class="card">
-              <img
-                src="./images/portfolio/portfolio-online-courses.jpg"
-                alt="Online courses landing"
-                width="360"
-              />
-              <h3 class="values-item-title">Online Courses</h3>
-              <p class="values-item-text">Marketing</p>
-            </li>
-          </ul>
-        </div>
+        <h2 class="section-title">Our Portfolio</h2>
+        <ul class="portfolio-list">
+          <li class="card">
+            <img src="./images/bankingapp.jpg" alt="Banking App interface on mobile" width="360" />
+            <h3 class="values-item-title">Banking App</h3>
+            <p class="values-item-text">App</p>
+          </li>
+          <li class="card">
+            <img src="./images/cashlesspayment.jpg" alt="Contactless payment by smartphone" width="360" />
+            <h3 class="values-item-title">Cashless Payment</h3>
+            <p class="values-item-text">Marketing</p>
+          </li>
+          <li class="card">
+            <img src="./images/meditationapp.jpg" alt="Meditation App screens" width="360" />
+            <h3 class="values-item-title">Meditation App</h3>
+            <p class="values-item-text">App</p>
+          </li>
+          <li class="card">
+            <img src="./images/taxiservice.jpg" alt="Taxi service booking screen" width="360" />
+            <h3 class="values-item-title">Taxi Service</h3>
+            <p class="values-item-text">Marketing</p>
+          </li>
+          <li class="card">
+            <img src="./images/screenillustrations.jpg" alt="Set of colorful screen illustrations" width="360" />
+            <h3 class="values-item-title">Screen Illustrations</h3>
+            <p class="values-item-text">Design</p>
+          </li>
+          <li class="card">
+            <img src="./images/onlinecourses.jpg" alt="Online courses landing" width="360" />
+            <h3 class="values-item-title">Online Courses</h3>
+            <p class="values-item-text">Marketing</p>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER — без контейнера, прямые дети -->
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo-accent-footer">Studio</span></a
-        >
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing &amp; growth solutions.
-        </p>
-      </div>
+      <a href="./index.html" class="logo">Web<span class="logo-accent-footer">Studio</span></a>
+      <p class="footer-text">
+        Increase the flow of customers and sales for your business with
+        digital marketing &amp; growth solutions.
+      </p>
     </footer>
   </body>
 </html>
